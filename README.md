@@ -4,7 +4,7 @@ A comprehensive data analytics project on analyzing Air Quality Index (AQI) data
 The dataset contains daily AQI and pollutant values. The goal of this project is to demonstrate real-world data cleaning, exploratory data analysis (EDA), insight generation and visualization.
 
 # Dataset
-Source: Kaggle
+Source: Kaggle  
 Time Period: 2021-2024  
 Records: 1461  
 Features: 
