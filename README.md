@@ -21,4 +21,4 @@ Version control and deployment: GitHub
 
 # Author
 Kaushiki Wankhade  
-Engineering Undergraduate | Aspiring Data & Business Analyst  
+Engineering Undergraduate | Aspiring Data/Business Analyst  
