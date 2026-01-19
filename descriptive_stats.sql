@@ -4,24 +4,16 @@ SELECT
 FROM delhi
 -- the database includes pollutant and AQI data of over 1461 days, including days, numbered as 1 to 7 (1 being monday and 7 being sunday)
 
--- most polluted days 
 SELECT 
-    date_final,     
-    days,   
-    AQI
+    month,
+    ROUND(AVG(aqi), 2) AS avg_aqi,
+    MIN(aqi) AS min_aqi,
+    MAX(aqi) AS max_aqi,
+    COUNT(*) AS total_days,
+    COUNT(CASE WHEN aqi > 150 THEN 1 END) AS unhealthy_days
 FROM delhi
-ORDER BY AQI DESC
-LIMIT 50;
---worst polluted days with AQI above 400, marking as hazardous.
-
--- least polluted days
-SELECT
-    date_final,
-    days,
-    AQI
-FROM delhi
-ORDER BY AQI ASC
-LIMIT 50
+GROUP BY month
+ORDER BY avg_aqi DESC;
 
 -- average AQI of every month over four years
 SELECT 
