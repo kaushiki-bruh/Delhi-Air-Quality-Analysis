@@ -18,7 +18,7 @@ Database server: MySQL
 Visualization: PowerBI, matplotlib  
 Version control and deployment: GitHub  
 
-## Project Structure  
+# Project Structure  
 project-root/  
 ├── sql/  
 │   ├── descriptive_stats.sql  
